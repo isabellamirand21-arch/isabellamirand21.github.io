@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Nossa História ❤️</title>
+
+<style>
+body {
+  background: linear-gradient(#5a0f1c, #ffffff);
+  font-family: Arial;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+}
+
+.card {
+  background: white;
+  color: #5a0f1c;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+button {
+  background: #ffb6c1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Nossa História ❤️</h1>
+
+<audio id="music" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+  <h2>Abra a carta 💌</h2>
+  <button onclick="iniciar()">Clique aqui</button>
+  <p id="mensagem" style="display:none;">
+    3 anos de nós… mesmo com a distância, você continua sendo meu lugar favorito ❤️
+  </p>
+</div>
+
+<script>
+function iniciar() {
+  document.getElementById("music").play();
+  document.getElementById("mensagem").style.display = "block";
+}
+</script>
+
+</body>
+</html>
